@@ -1,7 +1,7 @@
 
-# Torrent Search Engine
+# Torrent Search
 
-Welcome to the Torrent Search Engine project! This repository contains the source code for a powerful torrent search engine that indexes and searches torrent files across various torrent sites.
+Welcome to the Torrent Search project! This repository contains the source code for a powerful torrent search engine that indexes and searches torrent files across various torrent sites.
 
 ## Features
 
@@ -17,8 +17,8 @@ To get started with the Torrent Search Engine, follow these steps:
 
 1. **Clone the Repository**:
     ```sh
-    git clone https://github.com/yourusername/torrent-search-engine.git
-    cd torrent-search-engine
+    git clone https://github.com/kxvnlpl/torrent-search.git
+    cd torrent-search
     ```
 
 2. **Install Dependencies**:
@@ -51,8 +51,8 @@ We welcome contributions from the community! If you would like to contribute to 
 1. **Fork the Repository**: Click on the "Fork" button at the top right of this page.
 2. **Clone Your Fork**:
     ```sh
-    git clone https://github.com/yourusername/torrent-search-engine.git
-    cd torrent-search-engine
+    git clone https://github.com/kxvnlpl/torrent-search.git
+    cd torrent-search
     ```
 3. **Create a Branch**:
     ```sh
@@ -75,6 +75,6 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Contact
 
-If you have any questions or need further assistance, feel free to open an issue or contact us at [your-email@example.com].
+If you have any questions or need further assistance, feel free to open an issue!
 
 Happy torrent searching!
