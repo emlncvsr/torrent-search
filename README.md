@@ -51,7 +51,7 @@ We welcome contributions from the community! If you would like to contribute to 
 1. **Fork the Repository**: Click on the "Fork" button at the top right of this page.
 2. **Clone Your Fork**:
     ```sh
-    git clone https://github.com/kxvnlpl/torrent-search.git
+    git clone https://github.com/emlncvsr/torrent-search.git
     cd torrent-search
     ```
 3. **Create a Branch**:
