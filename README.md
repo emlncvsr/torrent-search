@@ -17,7 +17,7 @@ To get started with the Torrent Search Engine, follow these steps:
 
 1. **Clone the Repository**:
     ```sh
-    git clone https://github.com/kxvnlpl/torrent-search.git
+    git clone https://github.com/emlncvsr/torrent-search.git
     cd torrent-search
     ```
 
