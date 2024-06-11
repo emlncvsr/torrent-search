@@ -36,9 +36,9 @@ jobs:
 
       - name: Run Scraper
         run: |
-          if [ ${{ github.event.inputs.scraper }} = 'nyaa' ]; then
+          if [ "${{ github.event.inputs.scraper }}" = 'nyaa' ]; then
             python nyaa_scraper.py "${{ github.event.inputs.query }}" "${{ github.event.inputs.pages }}";
-          elif [ ${{ github.event.inputs.scraper }} = '1337x' ]; then
+          elif [ "${{ github.event.inputs.scraper }}" = '1337x' ]; then
             python 1337x.py "${{ github.event.inputs.query }}" "${{ github.event.inputs.pages }}";
           else
             echo "Invalid scraper specified";
