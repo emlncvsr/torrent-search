@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <title>Scraper Interface</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Scraper Interface</h1>
+      <form id="scraper-form">
+        <label for="query">Search Query:</label>
+        <input type="text" id="query" name="query" required />
+        <label for="pages">Number of Pages:</label>
+        <input type="number" id="pages" name="pages" required />
+        <label for="scraper">Select Scraper:</label>
+        <select id="scraper" name="scraper" required>
+          <option value="nyaa">Nyaa</option>
+          <option value="1337x">1337x</option>
+        </select>
+        <button type="submit">Scrape</button>
+      </form>
+      <div id="results"></div>
+    </div>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

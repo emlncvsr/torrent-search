@@ -1,0 +1,53 @@
+name: Scrape Torrents
+
+on:
+  workflow_dispatch:
+    inputs:
+      query:
+        description: "Search Query"
+        required: true
+        default: ""
+      pages:
+        description: "Number of Pages"
+        required: true
+        default: "1"
+      scraper:
+        description: "Select Scraper"
+        required: true
+        default: "nyaa"
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: "3.x"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests beautifulsoup4 aiohttp
+
+      - name: Run Scraper
+        run: |
+          if [ ${{ github.event.inputs.scraper }} = 'nyaa' ]; then
+            python nyaa_scraper.py "${{ github.event.inputs.query }}" "${{ github.event.inputs.pages }}";
+          elif [ ${{ github.event.inputs.scraper }} = '1337x' ]; then
+            python 1337x.py "${{ github.event.inputs.query }}" "${{ github.event.inputs.pages }}";
+          else
+            echo "Invalid scraper specified";
+            exit 1;
+          fi
+
+      - name: Save Results
+        uses: actions/upload-artifact@v2
+        with:
+          name: results
+          path: |
+            *.csv
