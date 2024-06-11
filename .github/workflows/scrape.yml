@@ -4,17 +4,17 @@ on:
   workflow_dispatch:
     inputs:
       query:
-        description: "Search Query"
+        description: 'Search Query'
         required: true
-        default: ""
+        default: ''
       pages:
-        description: "Number of Pages"
+        description: 'Number of Pages'
         required: true
-        default: "1"
+        default: '1'
       scraper:
-        description: "Select Scraper"
+        description: 'Select Scraper'
         required: true
-        default: "nyaa"
+        default: 'nyaa'
 
 jobs:
   scrape:
@@ -27,7 +27,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
-          python-version: "3.x"
+          python-version: '3.x'
 
       - name: Install dependencies
         run: |
